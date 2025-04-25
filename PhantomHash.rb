@@ -292,6 +292,7 @@ end
 
 # Step 8: Check User Password Vulnerability
 def check_user_password_vulnerability(common_passwords, global_substrings, global_words)
+  system("clear") || system("cls")
   print "\nEnter your password (your input will not be saved): "
   system("stty -echo") # Disable echoing of input
   user_password = gets.chomp
